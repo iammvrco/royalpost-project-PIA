@@ -1,0 +1,7 @@
+{
+  "name": "project-royalpost",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border" translucent>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/icon/royal post.png"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
+
+    <ion-slide style="display: block;">
+      <ion-slides class="slides-h" pager="true" [options]="horizontal" >
+
+        <ion-slide *ngFor="let artist of numberOne">
+          <div class="number-one" style="width: 100%; height: 100%;">
+            <div class="title">
+              <h3 (click)="gotoArticle()">{{artist.title}}</h3>
+              <p> {{artist.subtitle}}</p>
+            </div>
+            <img src={{artist.img}}/>
+          </div>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-slide>
+
+    <ion-slide>
+      <div style="background: yellow; height: 100%; width: 100%;"></div>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

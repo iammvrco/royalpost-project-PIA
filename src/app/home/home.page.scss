@@ -1,0 +1,50 @@
+.slides-h{
+  height: 100%; 
+  --bullet-background:black; 
+  --bullet-background-active:black;
+};
+
+.number-one img{
+  object-fit: cover; 
+  width: 100%;
+};
+
+.title{
+  position: fixed ;
+  background: white;
+  width: 100%;
+  height: 25%;
+}
+
+.number-one h3{
+  width: 90%;
+  margin-top: 15%;
+  position: fixed ;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+.number-one p{
+  width: 90%;
+  margin-top: 35%;
+  position: fixed ;
+  text-align: left;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+
+ion-toolbar img{
+  width: 70%;
+  background: white;
+};
+
+ion-toolbar {
+  background: white;
+  --color: black;
+  position: absolute;
+  top: 0;
+}
+ion-content{
+  position: fixed;
+}
