@@ -1,50 +1,46 @@
+ion-toolbar img{
+  width: 70%;
+
+};
+
+ion-toolbar {
+  --background: black;
+}
+ion-content{
+  position: fixed;
+}
+
 .slides-h{
   height: 100%; 
   --bullet-background:black; 
   --bullet-background-active:black;
 };
 
+.number-one{
+  width: 100%; 
+  height: 100%;
+}
+
 .number-one img{
-  object-fit: cover; 
+  object-fit: cover ; 
   width: 100%;
+  object-position: center;
 };
 
 .title{
-  position: fixed ;
-  background: white;
+  position: fixed;
   width: 100%;
-  height: 25%;
+  background: white;
 }
 
 .number-one h3{
-  width: 90%;
-  margin-top: 15%;
-  position: fixed ;
-  text-align: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: oblique;
+  text-align: left;
 }
 .number-one p{
-  width: 90%;
-  margin-top: 35%;
-  position: fixed ;
-  text-align: left;
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: oblique;
-}
-
-ion-toolbar img{
-  width: 70%;
-  background: white;
-};
-
-ion-toolbar {
-  background: white;
-  --color: black;
-  position: absolute;
-  top: 0;
-}
-ion-content{
-  position: fixed;
+  text-align: left;
 }
