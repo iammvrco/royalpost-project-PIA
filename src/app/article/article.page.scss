@@ -1,15 +1,8 @@
-
 ion-toolbar img{
-    width: 70%;
-    background: white;
-  };
-  
-  ion-toolbar {
-    background: white;
-    --color: black;
-    position: absolute;
-    top: 0;
-  }
-  ion-content{
-    position: fixed;
-  }
+  width: 70%;
+
+};
+
+ion-toolbar {
+  --background: black;
+}

@@ -6,9 +6,6 @@ ion-toolbar img{
 ion-toolbar {
   --background: black;
 }
-ion-content{
-  position: fixed;
-}
 
 .slides-h{
   height: 100%; 
@@ -31,6 +28,8 @@ ion-content{
   position: fixed;
   width: 100%;
   background: white;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .number-one h3{
