@@ -1,39 +1,39 @@
-<ion-content [fullscreen]="false">
+<ion-header >
+  <ion-toolbar>
 
-  <ion-header >
-    <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button (click)="readJson()" color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
 
-      
-      <ion-buttons slot="start">
-        <ion-button color="light">
-          <ion-icon name="search-outline"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-      <ion-buttons slot="end">
-        <ion-menu-button color="light" autoHide="false"></ion-menu-button>
-      </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/icon/royal-post-w.png"/>
+    </ion-title>
 
-      <ion-title style="text-align: center;">
-        <img src="../../assets/icon/royal-post-w.png"/>
-      </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    </ion-toolbar>
-  </ion-header>
+
+<ion-content>
 
   <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
 
     <ion-slide style="display: block;">
-      <ion-slides class="slides-h" pager="true" [options]="horizontal" >
+      <ion-slides class="slides-h" pager="true" [options]="horizontal">
 
-        <ion-slide *ngFor="let artist of numberOne">
+        <ion-slide *ngFor="let artist of numberOne | slice:0:2">
           <div class="number-one">
-            
+
             <div class="title">
               <h3 (click)="gotoArticle()">{{artist.title}}</h3>
               <p>{{artist.subtitle}}</p>
             </div>
 
-            <img src={{artist.img}}/>
+           <img src={{artist.img}}/>
 
           </div>
         </ion-slide>
