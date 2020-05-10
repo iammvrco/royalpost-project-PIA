@@ -29,7 +29,7 @@ export class HomePage {
     {
       id:2,
       img:"../../assets/number one/JS Napoleon.png",
-      title:"\"La bodega\" el nuevo libro de Napoleón.",
+      title:"Soy Napoleón",
       subtitle:"Napoléon anuncia el lanzamiento de su más reciente obra literaria en...",
     },
     {
