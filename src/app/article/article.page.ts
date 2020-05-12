@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-article',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlePage implements OnInit {
 
-  constructor() { }
+  artist = {
+    title:"",
+    subtitle:"",
+    date:"",
+    text:"",
+    img:""
+  }
+
+  constructor( private activatedRoute: ActivatedRoute ) { }
 
   ngOnInit() {
+    this.artist.title=this.activatedRoute.snapshot.paramMap.get('title');
+    this.artist.subtitle=this.activatedRoute.snapshot.paramMap.get('subtitle');
+    this.artist.date=this.activatedRoute.snapshot.paramMap.get('date');
+    this.artist.text=this.activatedRoute.snapshot.paramMap.get('text');
+    this.artist.img=this.activatedRoute.snapshot.paramMap.get('img');
   }
 
 }

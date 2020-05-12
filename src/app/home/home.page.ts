@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -30,8 +30,8 @@ export class HomePage {
     loop:true,
   };
 
-  gotoArticle(){
-    this.router.navigate( ['/article'] );
+  gotoArticle(title,subtitle,date,text,img){
+    this.router.navigate( ['/article',title,subtitle,date,text,img] );
   }
 
 }
