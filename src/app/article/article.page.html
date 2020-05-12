@@ -18,16 +18,21 @@
 
 <ion-content>
 
-  <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
+  <div class="article">
 
-    <ion-slide >
-      
-    </ion-slide>
+    <div class="title">
+      <h1>{{artist.title}}</h1>
+      <p>{{artist.date}}</p>
+    </div>
 
-    <ion-slide>
-      <div style="background: yellow; height: 100%; width: 100%;"></div>
-    </ion-slide>
+    <div class="image">
+      <img src={{artist.img}} />
+    </div>
 
-  </ion-slides>
+    <div class="text">
+      <p>{{artist.text}}</p>
+    </div>
+
+  </div>
 
 </ion-content>
