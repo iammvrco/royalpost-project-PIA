@@ -25,11 +25,11 @@
     <ion-slide style="display: block;">
       <ion-slides class="slides-h" pager="true" [options]="horizontal">
 
-        <ion-slide *ngFor="let artist of numberOne | slice:0:2">
+        <ion-slide *ngFor="let artist of numberOne | slice:0:3">
           <div class="number-one">
 
             <div class="title">
-              <h3 (click)="gotoArticle(artist.title,artist.subtitle,artist.date,artist.text,artist.img)">{{artist.title}}</h3>
+              <h1 (click)="gotoArticle(artist.title,artist.subtitle,artist.author,artist.date,artist.text,artist.img)">{{artist.title}}</h1>
               <p>{{artist.subtitle}}</p>
             </div>
 

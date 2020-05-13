@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'article/:title/:subtitle/:date/:text/:img',
+    path: 'article/:title/:subtitle/:author/:date/:text/:img',
     loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
   },
 ];

@@ -8,38 +8,46 @@ ion-toolbar {
 }
 
 .slides-h{
-  height: 100%; 
+  height: 100%;
+  background:rgb(235, 234, 234);
   --bullet-background:black; 
   --bullet-background-active:black;
 };
 
 .number-one{
-  width: 100%; 
-  height: 100%;
+  width: 96%; 
+  height: 96%;
 }
 
 .number-one img{
   object-fit: cover ; 
   width: 100%;
   object-position: center;
+  border-radius: 25px 25px 20px 20px ;
 };
 
 .title{
   position: fixed;
-  width: 100%;
+  width: 96%;
   background: white;
-  padding-left: 2%;
-  padding-right: 2%;
+  border-radius: 20px 20px 0 0;
 }
 
-.number-one h3{
+.number-one h1{
+  font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: oblique;
   text-align: left;
+  font-weight: bold;
+
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .number-one p{
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: oblique;
   text-align: left;
+
+  padding-left: 2%;
+  padding-right: 2%;
 }

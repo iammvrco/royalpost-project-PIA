@@ -11,6 +11,7 @@ export class ArticlePage implements OnInit {
   artist = {
     title:"",
     subtitle:"",
+    author:"",
     date:"",
     text:"",
     img:""
@@ -21,6 +22,7 @@ export class ArticlePage implements OnInit {
   ngOnInit() {
     this.artist.title=this.activatedRoute.snapshot.paramMap.get('title');
     this.artist.subtitle=this.activatedRoute.snapshot.paramMap.get('subtitle');
+    this.artist.author=this.activatedRoute.snapshot.paramMap.get('author');
     this.artist.date=this.activatedRoute.snapshot.paramMap.get('date');
     this.artist.text=this.activatedRoute.snapshot.paramMap.get('text');
     this.artist.img=this.activatedRoute.snapshot.paramMap.get('img');
