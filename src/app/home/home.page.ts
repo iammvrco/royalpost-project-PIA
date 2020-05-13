@@ -30,8 +30,8 @@ export class HomePage {
     loop:true,
   };
 
-  gotoArticle(title,subtitle,date,text,img){
-    this.router.navigate( ['/article',title,subtitle,date,text,img] );
+  gotoArticle(title,subtitle,author,date,text,img){
+    this.router.navigate( ['/article',title,subtitle,author,date,text,img] );
   }
 
 }

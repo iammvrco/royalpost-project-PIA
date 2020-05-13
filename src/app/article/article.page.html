@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border" translucent>
+<ion-header>
   <ion-toolbar>
 
     <ion-buttons slot="start">
@@ -18,21 +18,21 @@
 
 <ion-content>
 
-  <div class="article">
-
     <div class="title">
       <h1>{{artist.title}}</h1>
-      <p>{{artist.date}}</p>
     </div>
 
     <div class="image">
       <img src={{artist.img}} />
     </div>
 
+    <div class="secondary">
+      <p>Escrito por {{artist.author}}</p>
+      <p>{{artist.date}}</p>
+    </div>
+
     <div class="text">
       <p>{{artist.text}}</p>
     </div>
-
-  </div>
 
 </ion-content>
