@@ -14,12 +14,12 @@ ion-toolbar {
   --bullet-background-active:black;
 };
 
-.number-one{
+.page{
   width: 96%; 
   height: 96%;
 }
 
-.number-one img{
+.page img{
   object-fit: cover ; 
   width: 100%;
   object-position: center;
@@ -33,7 +33,7 @@ ion-toolbar {
   border-radius: 20px 20px 0 0;
 }
 
-.number-one h1{
+.page h1{
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: left;
@@ -42,12 +42,21 @@ ion-toolbar {
   padding-left: 2%;
   padding-right: 2%;
 }
-.number-one p{
+.page p{
   font-size: 16px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: oblique;
   text-align: left;
 
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.option{
+
+  height: 15%;
+}
+
+.option h1{
+  text-align: center;
+  background: white;
 }

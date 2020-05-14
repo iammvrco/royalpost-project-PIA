@@ -1,0 +1,12 @@
+[
+    {
+      "id":1,
+      "category":"sports",
+      "img":"./assets/data/articles/images/sports/BTR.png",
+      "title":"Big Time Rush prepara su regreso después de 10 años.",
+      "subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed. ",
+      "date":"12 de Marzo del 2020",
+      "author":"Judith Alejandra.",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta libero at eros tempus rutrum. Proin urna enim, commodo sit amet nulla a, accumsan lobortis felis. Nullam lacinia sit amet purus ac porttitor. Phasellus in metus id risus consectetur dictum. Morbi sit amet turpis non dolor consectetur pulvinar eget nec nulla. Aenean vestibulum tellus id risus consequat, vel feugiat tortor ullamcorper. Quisque odio metus, porta vitae placerat et, tempus a leo. Sed lacinia auctor neque sed viverra.  Vivamus nec tempor nunc. Mauris elementum tortor sit amet lacus efficitur vulputate. Praesent sem quam, fringilla eu eros non, vulputate dictum tellus. Suspendisse potenti. Suspendisse dolor lectus, interdum sed urna pellentesque, viverra mollis mauris. Quisque rutrum a justo quis gravida. Donec vulputate ac ipsum vel facilisis. Sed velit eros, malesuada at mi nec, efficitur dapibus nunc. Maecenas eget lectus augue. Duis porttitor eros risus, nec hendrerit orci malesuada et. Cras suscipit et tortor non imperdiet. Mauris et finibus ipsum, et feugiat diam. Nulla pellentesque mi et rutrum aliquet. Integer sollicitudin lorem in erat sollicitudin volutpat. Pellentesque rutrum lorem at tincidunt condimentum. Phasellus luctus nulla turpis, vel sodales felis ullamcorper vel."
+    }
+]
