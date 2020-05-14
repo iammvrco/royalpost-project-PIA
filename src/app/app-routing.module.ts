@@ -12,9 +12,14 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'article/:title/:subtitle/:author/:date/:text/:img',
+    path: 'article/:category/:id',
     loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
   },
+  {
+    path: 'articles/:category',
+    loadChildren: () => import('./articles/articles.module').then( m => m.ArticlesPageModule)
+  },
+
 ];
 
 @NgModule({

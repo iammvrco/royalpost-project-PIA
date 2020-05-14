@@ -9,16 +9,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomePage {
 
-  numberOne : any;
+  top=[] ;
 
   constructor( private router : Router, public http : HttpClient ) {
 
   }
 
   ngOnInit(){
-    fetch("./assets/data/data.json").then(res => res.json()).then(json => {
-      this.numberOne=json;
-    })
+    fetch("./assets/data/articles/authors.json").then(res => res.json()).then(json => {
+      this.top[0]=json[json.length-1];
+    });
+    fetch("./assets/data/articles/music.json").then(res => res.json()).then(json => {
+      this.top[1]=json[json.length-1];
+    });
+    fetch("./assets/data/articles/sports.json").then(res => res.json()).then(json => {
+      this.top[2]=json[json.length-1];
+    });
   }
 
   vertical={
@@ -30,8 +36,8 @@ export class HomePage {
     loop:true,
   };
 
-  gotoArticle(title,subtitle,author,date,text,img){
-    this.router.navigate( ['/article',title,subtitle,author,date,text,img] );
-  }
+  /*gotoArticle(category,id){
+    this.router.navigate( ['/article',category,id] );
+  }*/
 
 }

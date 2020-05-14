@@ -15,25 +15,17 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
 
-  <div class="title">
-    <h1>{{article.title}}</h1>
-  </div>
+  <ion-list>
 
-  <div class="image">
-    <img src={{article.img}} />
-  </div>
+    <ion-card *ngFor="let article of articles" [routerLink]="['/article',category,article.id]">
+      <ion-card-header>
+        <ion-card-subtitle>{{article.subtitle}}</ion-card-subtitle>
+        <ion-card-title>{{article.title}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
 
-  <div class="secondary">
-    <h1>{{article.subtitle}}</h1>
-    <p>Escrito por {{article.author}}</p>
-    <p>{{article.date}}</p>
-  </div>
-
-  <div class="text">
-    <p>{{article.text}}</p>
-  </div>
+  </ion-list>
 
 </ion-content>
