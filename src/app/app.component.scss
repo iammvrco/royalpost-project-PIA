@@ -1,3 +1,11 @@
 ion-toolbar{
-    --background: black
+    --background: white;
+}
+
+ion-toolbar img{
+    width: 70%;
+}
+
+ion-menu{
+    --width:100%;
 }
