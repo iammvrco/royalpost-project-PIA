@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'articles/:category',
     loadChildren: () => import('./articles/articles.module').then( m => m.ArticlesPageModule)
+  },  {
+    path: 'add-article',
+    loadChildren: () => import('./add-article/add-article.module').then( m => m.AddArticlePageModule)
   },
+
 
 ];
 

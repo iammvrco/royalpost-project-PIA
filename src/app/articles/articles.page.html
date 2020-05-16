@@ -19,10 +19,11 @@
 
   <ion-list>
 
-    <ion-card *ngFor="let article of articles" [routerLink]="['/article',category,article.id]">
+    <ion-card *ngFor="let article of articles" [routerLink]="['/article',category,article.id]"> 
+      <img src={{article.img}}/>
       <ion-card-header>
-        <ion-card-subtitle>{{article.subtitle}}</ion-card-subtitle>
         <ion-card-title>{{article.title}}</ion-card-title>
+        <ion-card-subtitle>{{article.subtitle}}</ion-card-subtitle>
       </ion-card-header>
     </ion-card>
 
